@@ -1,0 +1,20 @@
+>>> text_indentation("Hello. World? This is a test: Yes.")
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+    Hello.
+    <BLANKLINE>
+    World?
+    <BLANKLINE>
+    This is a test:
+    <BLANKLINE>
+    Yes.
+    >>> text_indentation("   Leading space. Trailing space!   ")
+    Leading space.
+    <BLANKLINE>
+    Trailing space!
+    <BLANKLINE>
+    >>> text_indentation(100)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation("Only one sentence.")
+    Only one sentence.
