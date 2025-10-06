@@ -1,9 +1,17 @@
 #!/usr/bin/python3
+"""Module that defines a Square class."""
+
+
 class Square:
+    """Class that defines a square by its size."""
     def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new square.
+        Args:
+            size (int): The size of the square (default is 0).
+            position (tuple): The position of the square (default is (0, 0)).
+        """
         self.size = size
         self.position = position
-
     @property
     def size(self):
         """Retrieve the size of the square."""
