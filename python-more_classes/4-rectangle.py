@@ -7,7 +7,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle instance.
-        
+
         Args:
             width (int): The width of the rectangle (default is 0).
             height (int): The height of the rectangle (default is 0).
@@ -63,4 +63,3 @@ class Rectangle:
     def __repr__(self):
         """Return a string representation that can recreate the object."""
         return f"Rectangle({self.__width}, {self.__height})"
-    

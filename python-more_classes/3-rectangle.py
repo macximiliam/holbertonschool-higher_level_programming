@@ -7,7 +7,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle instance.
-        
+
         Args:
             width (int): The width of the rectangle (default is 0).
             height (int): The height of the rectangle (default is 0).
@@ -58,4 +58,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         return "\n".join(["#" * self.__width for _ in range(self.__height)])
-
