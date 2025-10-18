@@ -3,10 +3,12 @@
 
 
 class MyList(list):
-    """A subclass of list with an additional method to print the list sorted."""
+    """A subclass of list with an additional
+    method to print the list sorted."""
 
     def print_sorted(self):
-        """Prints the list in ascending order without modifying the original list.
+        """Prints the list in ascending order
+        without modifying the original list.
 
         This method uses the built-in sorted() function to display
         the list elements in ascending order.
