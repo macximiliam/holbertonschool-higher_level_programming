@@ -23,4 +23,5 @@ class VerboseList(list):
     def pop(self, index=-1):
         """Remove item by index and show message."""
         item = super().pop(index)
-        print(f"Popped [{index}] from the list.")
+        print(f"Popped [{item}] from the list.")
+        return item
