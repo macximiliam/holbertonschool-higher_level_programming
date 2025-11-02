@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that defines a function to read a text file and print it to stdout.
+"""Module  that defines a function to read a text file and print it to stdout.
 """
 
 
