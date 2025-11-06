@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""SCript that adds command-line arguments to a JSON file"""
+"""Script that adds command-line arguments to a JSON file."""
 
 
 import sys
@@ -8,10 +8,10 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 filename = "add_item.json"
 
-try: 
+try:
     items = load_from_json_file(filename)
 except FileNotFoundError:
     items = []
 
-    items.extend(sys.argv[1:])
-    save_to_json_file(items, filename)
+items.extend(sys.argv[1:])
+save_to_json_file(items, filename)
