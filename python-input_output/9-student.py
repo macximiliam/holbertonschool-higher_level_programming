@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defines a class Student."""
+
+
 class Student:
     """Class that defines a student."""
 
