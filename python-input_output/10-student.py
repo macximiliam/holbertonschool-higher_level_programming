@@ -17,6 +17,8 @@ class Student:
         If attrs is a list of strings, only those attributes are returned.
         Otherwise, return all attributes.
         """
-        if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
-            return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
+        if isinstance(attrs, list) and all(isinstance(item, str)
+                                           for item in attrs):
+            return {key: getattr(self, key)
+                    for key in attrs if hasattr(self, key)}
         return self.__dict__
