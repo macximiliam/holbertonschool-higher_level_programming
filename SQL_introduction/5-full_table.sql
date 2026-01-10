@@ -1,4 +1,4 @@
--- This script prints the structure of first_table without using DESCRIBE or EXPLAIN
+-- This script prints the structure first_table without using DESCRIBE or EXPLAIN
 SELECT
     COLUMN_NAME AS 'Field',
     COLUMN_TYPE AS 'Type',
