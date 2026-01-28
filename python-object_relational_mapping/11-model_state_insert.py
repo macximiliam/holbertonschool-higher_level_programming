@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script adds a new State object named 'Louisiana' 
+This script adds a new State object named 'Louisiana'
 to the database and prints its new ID.
 """
 import sys
