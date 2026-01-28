@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # Creates a cursor to interact with the database.
     cursor = db.cursor()
 
-    # To prevent SQL injection, we use a placeholder (%s) and pass 
+    # To prevent SQL injection, we use a placeholder (%s) and pass
     # the user input as a separate argument to the execute method.
     query = "SELECT * FROM states WHERE name = BINARY %s ORDER BY id ASC"
     cursor.execute(query, (sys.argv[4],))
