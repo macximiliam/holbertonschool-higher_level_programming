@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script finds the ID of a state based on the name 
+This script finds the ID of a state based on the name
 passed as an argument. It is safe from SQL injection.
 """
 import sys
