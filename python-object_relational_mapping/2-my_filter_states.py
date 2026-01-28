@@ -3,9 +3,10 @@
 This script takes an argument and displays all values in the states table
 of hbtn_0e_0_usa where name matches the argument.
 """
+
+
 import MySQLdb
 import sys
-
 
 if __name__ == "__main__":
     # Establishes connection to the database using the first three arguments.
