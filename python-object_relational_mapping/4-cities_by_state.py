@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 This script lists all cities from the database hbtn_0e_4_usa.
-The script takes 3 arguments: mysql username, mysql password, and database name.
+The script takes 3 arguments: mysql username,
+mysql password, and database name.
 """
 import MySQLdb
 import sys
