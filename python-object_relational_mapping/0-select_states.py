@@ -1,22 +1,28 @@
-import sqlite3
+#!/usr/bin/python3
+# This script connects to a MySQL database and lists all states from the database.
+import MySQLdb
+import sys
 
-# Connects to the database, executes the SQL query to fetch 'Dexter' genres, and prints the results.
-connection = sqlite3.connect('tv_shows.db')
-cursor = connection.cursor()
+def list_states():
+    # Connects to the database using arguments and executes a query to fetch all states.
+    db = MySQLdb.connect(
+        host="localhost",
+        port=3306,
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3]
+    )
+    
+    cur = db.cursor()
+    # Executes the SQL command to retrieve states sorted by ID
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+        
+    cur.close()
+    db.close()
 
-query = """
-SELECT tv_genres.name
-FROM tv_genres
-JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id
-JOIN tv_shows ON tv_show_genres.show_id = tv_shows.id
-WHERE tv_shows.title = 'Dexter'
-ORDER BY tv_genres.name ASC;
-"""
-
-cursor.execute(query)
-genres = cursor.fetchall()
-
-for row in genres:
-    print(row[0])
-
-connection.close()
+if __name__ == "__main__":
+    list_states()
