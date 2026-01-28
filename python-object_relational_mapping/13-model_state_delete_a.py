@@ -21,7 +21,8 @@ if __name__ == "__main__":
     session = Session()
 
     # Find all states that have the letter 'a' in their name.
-    states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
+    states_to_delete = session.query(State).
+    filter(State.name.like('%a%')).all()
 
     # Loop through the results and delete each one.
     for state in states_to_delete:
