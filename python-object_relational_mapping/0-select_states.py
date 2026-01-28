@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+
 """
 This script lists all states from the database hbtn_0e_0_usa.
 The script takes 3 arguments: mysql username, mysql password and database name.
 """
+
+
 import MySQLdb
 import sys
 
@@ -16,7 +19,6 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-
     cursor = db.cursor()
 
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
@@ -27,4 +29,3 @@ if __name__ == "__main__":
 
     cursor.close()
     db.close()
-
