@@ -8,6 +8,6 @@ if (isNaN(size)) {
   let i = 0;
   while (i < size) {
     console.log('X'.repeat(size));
-  i++;
+    i++;
   }
 }
